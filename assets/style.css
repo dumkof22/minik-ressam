@@ -194,3 +194,10 @@ footer {
   .mascot img { width: 130px; }
   .bubble::before { left: 50%; top: -9px; transform: translateX(-50%) rotate(135deg); }
 }
+
+.langs {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.8;
+}

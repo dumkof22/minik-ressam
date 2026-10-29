@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kipi Kids Gizlilik</title>
-<meta name="description" content="Kipi Kids çocuk uygulamasının gizlilik politikası: kişisel veri toplanmaz, reklam yoktur, her şey cihazda kalır.">
+<meta name="description" content="Kipi Kids çocuk uygulamasının gizlilik politikası: reklam yoktur, hesap ya da kişisel bilgi istenmez; çocuğun çizimleri ve ilerlemesi cihazda kalır.">
 <link rel="icon" href="../assets/favicon.png">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
@@ -16,7 +16,7 @@
   </header>
 
   <h1>Gizlilik Politikası</h1>
-  <p class="updated">Son güncelleme: 28 Ekim 2026</p>
+  <p class="updated">Son güncelleme: 29 Ekim 2026</p>
 
   <p>Kipi Kids, 3–10 yaş çocuklar için hazırlanmış bir eğitim, çizim ve boyama uygulamasıdır. Bu politika,
   Google Play'de yayımlanan Kipi Kids uygulaması (paket adı <code>com.hkn.birce</code>) için geçerlidir.</p>
@@ -24,9 +24,11 @@
   <div class="card summary">
     <strong>Kısaca</strong>
     <ul>
-      <li>Hiçbir kişisel veri toplamıyoruz. Hesap açılmaz; ad, e-posta, konum, fotoğraf, rehber gibi bilgiler istenmez.</li>
+      <li>Hesap açılmaz; ad, e-posta, konum, fotoğraf, rehber gibi bilgiler istenmez.</li>
       <li>Reklam yoktur. Analiz, izleme, çökme raporlama veya reklam kimliği kullanan hiçbir araç yoktur.</li>
-      <li>Sunucumuz yoktur. Uygulama, çocuğun çizimlerini, ilerlemesini veya sesini hiçbir yere göndermez.</li>
+      <li>Uygulama, çocuğun çizimlerini, ilerlemesini veya sesini hiçbir yere göndermez. Gönderdiği tek şey küçük bir
+      “ücretsiz sürüm kaydı”dır: uygulamanın cihazda ilk kullanıldığı gün, geri çözülemez bir kodla saklanır
+      (aşağıya bakın).</li>
       <li>Çocuğun yaptığı her şey cihazda kalır ve uygulama silinince silinir.</li>
     </ul>
   </div>
@@ -43,6 +45,28 @@
   <em>Uygulamalar › Kipi Kids › Depolama › Verileri temizle</em> yapıldığında kalıcı olarak silinir.
   Cihazınızda Android yedeklemesi açıksa bu dosyalar kendi Google hesabınızdaki cihaz yedeğine dahil
   edilebilir; bu yedek Google'ın hizmetidir ve bize ulaşmaz.</p>
+
+  <h2>Ücretsiz sürüm kaydı</h2>
+  <p>Ücretsiz sürümün hoş geldin günleri (her şeyin açık olduğu ilk günler), uygulama her silinip yüklendiğinde ya
+  da verisi temizlendiğinde baştan başlamasın diye uygulama <strong>Google Firebase (Cloud Firestore)</strong>
+  üzerinde küçük bir kayıt tutar:</p>
+  <ul>
+    <li><strong>Geri çözülemez bir kod:</strong> cihazda, Android'in her uygulamaya ayrı verdiği Android kimliğinden
+    SHA-256 işleviyle üretilir. Android kimliğinin kendisi cihazdan çıkmaz; kod ona geri çevrilemez ve başka
+    uygulamalarla ilişkilendirilemez.</li>
+    <li><strong>Uygulamanın cihazda ilk kullanıldığı gün</strong> (yalnızca bir tarih).</li>
+  </ul>
+  <p>Başka hiçbir şey gönderilmez: ad, hesap, konum, reklam kimliği, çizim, ilerleme ya da kullanım bilgisi yoktur.
+  Kayıt yalnızca ücretsiz sürümün günlük sınırlarını uygulamak için kullanılır; reklam, analiz, profil çıkarma ya da
+  izleme için asla kullanılmaz ve kimseyle paylaşılmaz. Uygulama kaydı okurken sunucunun saatini de kullanır; böylece
+  cihazın tarihini değiştirmek hoş geldin günlerini yeniden başlatmaz. Uygulama Firebase'e Firebase SDK'sı olmadan,
+  doğrudan şifreli bağlantıyla (HTTPS) bağlanır; bu yüzden başka hiçbir Firebase verisi toplanmaz. Veriler yurt
+  dışında, Avrupa Birliği'ndeki (Frankfurt) Google sunucularında saklanır; Google bu verileri bizim adımıza,
+  <a href="https://firebase.google.com/terms/data-processing-terms" rel="noopener">veri işleme koşullarına</a> göre işler.</p>
+  <p>Hukuki sebep: ücretsiz sürümün kötüye kullanılmasını önlemekteki meşru menfaatimiz (KVKK m. 5/2-f, GDPR
+  m. 6/1-f); çocuklar söz konusu olduğunda kayıt yalnızca uygulamanın iç işleyişine hizmet eder (COPPA). Kayıt bu
+  amaç için gerektiği sürece tutulur. Yalnızca geri çözülemez bir kod içerdiği için hangi kaydın kime ait olduğunu
+  bilemeyiz.</p>
 
   <h2>Mikrofon</h2>
   <p>İngilizce bölümündeki <strong>"Sen Söyle"</strong> etkinliğinde çocuğun söylediği kelime, cihazın üzerinde
@@ -68,7 +92,8 @@
 
   <h2>Çocukların gizliliği</h2>
   <p>Uygulama çocuklar için tasarlanmıştır ve Google Play Aileler Politikası'na uygun olarak hazırlanmıştır.
-  Çocuklardan bilerek hiçbir kişisel bilgi toplamayız (6698 sayılı KVKK, ABD COPPA ve AB GDPR). Satın alma ekranı,
+  Yalnızca uygulamanın iç işleyişine hizmet eden ücretsiz sürüm kaydı dışında çocuklardan hiçbir kişisel bilgi
+  toplamayız (6698 sayılı KVKK, ABD COPPA ve AB GDPR). Satın alma ekranı,
   abonelik yönetimi ve uygulama dışına açılan bağlantılar (bu sayfa gibi) bir <strong>ebeveyn kapısının</strong>
   arkasındadır: yazıyla verilen üç sayı tuşlanmadan açılmaz.</p>
 
@@ -76,12 +101,13 @@
   <p>Uygulamada reklam, analiz, çökme raporlama veya sosyal medya yazılımı yoktur. Kullanılan açık kaynak
   bileşenler (Flutter, three.js, sherpa-onnx konuşma tanıma) yalnızca cihazda çalışır ve veri göndermez.</p>
   <p>Abonelik satın alımı için Google'ın <strong>Play Faturalandırma Kitaplığı</strong> kullanılır. Bu kitaplık,
-  satın alma işleminin güvenilir çalışması için Google Play'e teknik teşhis bilgileri gönderebilir; uygulamadaki
-  internet izni bu kitaplıktan gelir. Bu bilgiler Google tarafından Google Gizlilik Politikası'na göre işlenir ve
-  bize ulaşmaz. Uygulamanın kendi kodu internete hiçbir şey göndermez.</p>
+  satın alma işleminin güvenilir çalışması için Google Play'e teknik teşhis bilgileri gönderebilir. Bu bilgiler
+  Google tarafından Google Gizlilik Politikası'na göre işlenir ve bize ulaşmaz. Ücretsiz sürüm kaydı dışında
+  uygulamanın kendi kodu internete hiçbir şey göndermez.</p>
 
   <h2>Haklarınız</h2>
-  <p>Kişisel veri toplamadığımız için bizde silinecek, düzeltilecek ya da aktarılacak bir kaydınız bulunmaz.
+  <p>Bizde adınız, e-postanız ya da sizi tanıtan başka bir bilgi bulunmaz. Tuttuğumuz tek kayıt yukarıda anlatılan
+  ücretsiz sürüm kaydıdır; yalnızca geri çözülemez bir kod içerdiği için hangisinin size ait olduğunu bulamayız.
   Cihazdaki bilgileri yukarıda anlatıldığı gibi istediğiniz zaman silebilirsiniz. Sorularınız için bize
   yazabilirsiniz.</p>
 
@@ -94,16 +120,19 @@
 
   <section class="lang" lang="en">
     <h1>Privacy Policy (English)</h1>
-    <p class="updated">Last updated: October 28, 2026 · <a href="../en/privacy/">Full policy in English</a></p>
+    <p class="updated">Last updated: October 29, 2026 · <a href="../en/privacy/">Full policy in English</a></p>
     <p>Kipi Kids (package <code>com.hkn.birce</code>) is a learning, drawing and colouring app for children
     aged 3–10.</p>
     <ul>
-      <li><strong>No personal data is collected.</strong> There are no accounts and we never ask for names, email
-      addresses, location, photos or contacts.</li>
+      <li><strong>No accounts, no personal details.</strong> We never ask for names, email addresses, location,
+      photos or contacts.</li>
       <li><strong>No ads, no analytics, no tracking,</strong> no advertising ID and no crash reporting SDKs.</li>
-      <li>We run no servers. The app never sends a child's drawings, progress or voice anywhere. The Internet
-      permission in the app comes from Google's Play Billing Library, which may send technical diagnostics to
-      Google Play to process purchases (handled by Google, never shared with us).</li>
+      <li>The app never sends a child's drawings, progress or voice anywhere. Google's Play Billing Library may send
+      technical diagnostics to Google Play to process purchases (handled by Google, never shared with us).</li>
+      <li><strong>Free version record:</strong> so that the free welcome days don't start over when the app is
+      reinstalled, the day the app was first used on the device is stored in Google Firebase (Cloud Firestore, EU)
+      under a one-way SHA-256 code of the app-specific Android ID. Nothing else is sent, and it is never used for
+      ads, analytics or tracking.</li>
       <li>Drawings, progress, rewards and settings (including the child's age chosen by a parent) are stored only
       in the app's private storage on the device and are deleted when the app is uninstalled or its data is
       cleared.</li>

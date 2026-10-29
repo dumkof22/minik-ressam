@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kipi Kids · Privacy Policy</title>
-<meta name="description" content="Privacy policy of the Kipi Kids children&#x27;s app: no personal data is collected, there are no ads and everything stays on the device.">
+<meta name="description" content="Privacy policy of the Kipi Kids children&#x27;s app: no ads, no accounts and no personal details asked; a child&#x27;s drawings and progress stay on the device.">
 <link rel="icon" href="../../assets/favicon.png">
 <link rel="stylesheet" href="../../assets/style.css">
 </head>
@@ -16,16 +16,16 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: October 28, 2026</p>
+  <p class="updated">Last updated: October 29, 2026</p>
 
   <p>Kipi Kids is a learning, drawing and coloring app for children aged 3–10. This policy applies to the Kipi Kids app published on Google Play (package name <code>com.hkn.birce</code>).</p>
 
   <div class="card summary">
     <strong>In short</strong>
     <ul>
-      <li>We do not collect any personal data. There are no accounts, and we never ask for names, email addresses, location, photos or contacts.</li>
+      <li>There are no accounts, and we never ask for names, email addresses, location, photos or contacts.</li>
       <li>There are no ads. No analytics, tracking, crash reporting or advertising ID tools are used.</li>
-      <li>We run no servers. The app never sends a child's drawings, progress or voice anywhere.</li>
+      <li>The app never sends a child's drawings, progress or voice anywhere. The only thing it sends is a small “free version record”: the day the app was first used on the device, stored under a one-way code (see below).</li>
       <li>Everything your child does stays on the device and is deleted when the app is uninstalled.</li>
     </ul>
   </div>
@@ -38,6 +38,15 @@
     <li>Settings: sound and music preferences, the app language and the child's age chosen by a parent (used to order content by age)</li>
   </ul>
   <p>This information is not shared with anyone. It is permanently deleted when the app is uninstalled or when you choose <em>Settings › Apps › Kipi Kids › Storage › Clear data</em> on Android. If Android backup is turned on, these files may be included in your device backup in your own Google account; that backup is a Google service and never reaches us.</p>
+
+  <h2>Free version record</h2>
+  <p>So that the free version's welcome days (when everything is open) don't start over every time the app is reinstalled or its data is cleared, the app keeps one small record in <strong>Google Firebase (Cloud Firestore)</strong>:</p>
+  <ul>
+    <li><strong>A one-way code</strong> made on the device from the Android ID, an identifier that Android gives each app separately (with the SHA-256 function). The Android ID itself never leaves the device, and the code cannot be turned back into it or linked to other apps.</li>
+    <li><strong>The day the app was first used</strong> on the device (a date only).</li>
+  </ul>
+  <p>Nothing else is sent: no name, account, location, advertising ID, drawings, progress or usage data. The record is used only to apply the free version's daily limits, never for advertising, analytics, profiling or tracking, and it is not shared with anyone. When the app reads the record, it also uses the server's clock, so changing the device's date does not restart the welcome days. The app reaches Firebase directly over an encrypted connection (HTTPS) without the Firebase SDK, so no other Firebase data is collected. The data is stored on Google servers in the European Union (Frankfurt); Google processes it on our behalf under its <a href="https://firebase.google.com/terms/data-processing-terms" rel="noopener">data processing terms</a>.</p>
+  <p>Legal basis: our legitimate interest in preventing misuse of the free version (GDPR Art. 6(1)(f), KVKK Art. 5(2)(f)); for children, the record only supports the app's internal operations (COPPA). It is kept for as long as it is needed for this purpose. Because it contains only a one-way code, we cannot tell which record belongs to whom.</p>
 
   <h2>Microphone</h2>
   <p>In the <strong>"Say It"</strong> activity of the Words (English) section, the word your child says is recognized in real time by a speech recognition model that runs on the device. Audio is <strong>never recorded</strong>, written to a file or sent anywhere. The microphone permission is requested only when this activity is opened. If it is not granted, the rest of the app works normally; the permission can be removed at any time in Android settings.</p>
@@ -52,14 +61,14 @@
   <p>The Premium subscription is bought through Google Play. Your payment details are processed by Google and never reach us. The app only asks the Google Play app on the device whether the subscription is active. The <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> applies to purchases.</p>
 
   <h2>Children&#x27;s privacy</h2>
-  <p>The app is designed for children and prepared in line with the Google Play Families Policy. We do not knowingly collect any personal information from children (US COPPA, EU GDPR and the Turkish Personal Data Protection Law KVKK). The purchase screen, subscription management and links that open outside the app (such as this page) are behind a <strong>parental gate</strong>: they open only after three numbers written in words are entered.</p>
+  <p>The app is designed for children and prepared in line with the Google Play Families Policy. Apart from the free version record above, which only supports the app's internal operations, we do not collect any personal information from children (US COPPA, EU GDPR and the Turkish Personal Data Protection Law KVKK). The purchase screen, subscription management and links that open outside the app (such as this page) are behind a <strong>parental gate</strong>: they open only after three numbers written in words are entered.</p>
 
   <h2>Third-party components</h2>
   <p>The app contains no advertising, analytics, crash reporting or social media software. The open-source components it uses (Flutter, three.js, sherpa-onnx speech recognition) run only on the device and send no data.</p>
-  <p>Google's <strong>Play Billing Library</strong> is used for subscription purchases. To make purchases work reliably, this library may send technical diagnostic information to Google Play; the app's Internet permission comes from this library. This information is processed by Google under the Google Privacy Policy and never reaches us. The app's own code sends nothing to the Internet.</p>
+  <p>Google's <strong>Play Billing Library</strong> is used for subscription purchases. To make purchases work reliably, this library may send technical diagnostic information to Google Play. This information is processed by Google under the Google Privacy Policy and never reaches us. Apart from the free version record, the app's own code sends nothing to the Internet.</p>
 
   <h2>Your rights</h2>
-  <p>Because we collect no personal data, we hold no records about you to delete, correct or transfer. You can delete the information on the device at any time as described above. You are welcome to write to us with any questions.</p>
+  <p>We hold no names, email addresses or other details that identify you. The only record we keep is the free version record described above; because it contains only a one-way code, we cannot find out which record is yours (GDPR Art. 11). You can delete the information on the device at any time as described above. You are welcome to write to us with any questions.</p>
 
   <h2>Changes</h2>
   <p>If we update this policy, we will publish the new version on this page and change its date. The policy is updated before any app update that changes how the app handles data.</p>

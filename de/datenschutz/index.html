@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kipi Kids · Datenschutzerklärung</title>
-<meta name="description" content="Datenschutzerklärung der Kinder-App Kipi Kids: Es werden keine personenbezogenen Daten erhoben, es gibt keine Werbung und alles bleibt auf dem Gerät.">
+<meta name="description" content="Datenschutzerklärung der Kinder-App Kipi Kids: keine Werbung, kein Konto, keine persönlichen Angaben; Zeichnungen und Fortschritt des Kindes bleiben auf dem Gerät.">
 <link rel="icon" href="../../assets/favicon.png">
 <link rel="stylesheet" href="../../assets/style.css">
 </head>
@@ -16,16 +16,16 @@
   </header>
 
   <h1>Datenschutzerklärung</h1>
-  <p class="updated">Zuletzt aktualisiert: 28. Oktober 2026</p>
+  <p class="updated">Zuletzt aktualisiert: 29. Oktober 2026</p>
 
   <p>Kipi Kids ist eine Lern-, Mal- und Ausmal-App für Kinder von 3 bis 10 Jahren. Diese Erklärung gilt für die bei Google Play veröffentlichte App Kipi Kids (Paketname <code>com.hkn.birce</code>).</p>
 
   <div class="card summary">
     <strong>Kurz gesagt</strong>
     <ul>
-      <li>Wir erheben keine personenbezogenen Daten. Es gibt kein Konto, und wir fragen nie nach Namen, E-Mail-Adressen, Standort, Fotos oder Kontakten.</li>
+      <li>Es gibt kein Konto, und wir fragen nie nach Namen, E-Mail-Adressen, Standort, Fotos oder Kontakten.</li>
       <li>Es gibt keine Werbung. Es werden keine Analyse-, Tracking- oder Absturzberichts-Tools und keine Werbe-ID verwendet.</li>
-      <li>Wir betreiben keine Server. Die App sendet Zeichnungen, Fortschritt oder Stimme des Kindes nirgendwohin.</li>
+      <li>Die App sendet Zeichnungen, Fortschritt oder Stimme des Kindes nirgendwohin. Das Einzige, was sie sendet, ist ein kleiner „Eintrag zur kostenlosen Version“: der Tag, an dem die App auf dem Gerät zum ersten Mal genutzt wurde, gespeichert unter einem nicht umkehrbaren Code (siehe unten).</li>
       <li>Alles, was das Kind macht, bleibt auf dem Gerät und wird beim Deinstallieren der App gelöscht.</li>
     </ul>
   </div>
@@ -38,6 +38,15 @@
     <li>Einstellungen: Ton- und Musikeinstellungen, die App-Sprache und das von einem Elternteil gewählte Alter des Kindes (um Inhalte nach Alter zu ordnen)</li>
   </ul>
   <p>Diese Informationen werden mit niemandem geteilt. Sie werden dauerhaft gelöscht, wenn die App deinstalliert wird oder Sie unter Android <em>Einstellungen › Apps › Kipi Kids › Speicher › Daten löschen</em> wählen. Ist die Android-Sicherung aktiviert, können diese Dateien in die Gerätesicherung in Ihrem eigenen Google-Konto aufgenommen werden; diese Sicherung ist ein Dienst von Google und erreicht uns nie.</p>
+
+  <h2>Eintrag zur kostenlosen Version</h2>
+  <p>Damit die Willkommenstage der kostenlosen Version (an denen alles offen ist) nicht bei jeder Neuinstallation der App oder jedem Löschen ihrer Daten von vorn beginnen, speichert die App einen kleinen Eintrag in <strong>Google Firebase (Cloud Firestore)</strong>:</p>
+  <ul>
+    <li><strong>Ein nicht umkehrbarer Code</strong>, der auf dem Gerät aus der Android-ID gebildet wird, einer Kennung, die Android jeder App getrennt zuweist (mit der Funktion SHA-256). Die Android-ID selbst verlässt das Gerät nie, und der Code lässt sich weder in sie zurückverwandeln noch mit anderen Apps verknüpfen.</li>
+    <li><strong>Der Tag der ersten Nutzung</strong> der App auf dem Gerät (nur ein Datum).</li>
+  </ul>
+  <p>Sonst wird nichts gesendet: kein Name, kein Konto, kein Standort, keine Werbe-ID, keine Zeichnungen, kein Fortschritt und keine Nutzungsdaten. Der Eintrag dient nur dazu, die täglichen Grenzen der kostenlosen Version anzuwenden, nie für Werbung, Analyse, Profilbildung oder Tracking, und wird mit niemandem geteilt. Beim Lesen des Eintrags verwendet die App auch die Uhrzeit des Servers, damit ein Ändern des Gerätedatums die Willkommenstage nicht neu startet. Die App verbindet sich direkt über eine verschlüsselte Verbindung (HTTPS) und ohne das Firebase-SDK mit Firebase, daher werden keine weiteren Firebase-Daten erhoben. Die Daten liegen auf Servern von Google in der Europäischen Union (Frankfurt); Google verarbeitet sie in unserem Auftrag gemäß seinen <a href="https://firebase.google.com/terms/data-processing-terms" rel="noopener">Bedingungen zur Datenverarbeitung</a>.</p>
+  <p>Rechtsgrundlage: unser berechtigtes Interesse, Missbrauch der kostenlosen Version zu verhindern (Art. 6 Abs. 1 lit. f DSGVO; Art. 5 Abs. 2 lit. f KVKK); bei Kindern dient der Eintrag nur dem internen Betrieb der App (COPPA). Er wird so lange aufbewahrt, wie er für diesen Zweck nötig ist. Da er nur einen nicht umkehrbaren Code enthält, können wir nicht erkennen, wem welcher Eintrag gehört.</p>
 
   <h2>Mikrofon</h2>
   <p>In der Aktivität <strong>„Sag es“</strong> im Englischbereich wird das vom Kind gesprochene Wort in Echtzeit von einem Spracherkennungsmodell erkannt, das auf dem Gerät läuft. Der Ton wird <strong>nie aufgenommen</strong>, in keine Datei geschrieben und nirgendwohin gesendet. Die Mikrofonberechtigung wird nur angefragt, wenn diese Aktivität geöffnet wird. Wird sie nicht erteilt, funktioniert der Rest der App normal; die Berechtigung kann jederzeit in den Android-Einstellungen entzogen werden.</p>
@@ -52,14 +61,14 @@
   <p>Das Premium-Abo wird über Google Play gekauft. Ihre Zahlungsdaten verarbeitet Google; sie erreichen uns nie. Die App fragt nur die Google-Play-App auf dem Gerät, ob das Abo aktiv ist. Für Käufe gilt die <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
 
   <h2>Datenschutz für Kinder</h2>
-  <p>Die App ist für Kinder gemacht und entspricht der Google-Play-Richtlinie für Familien. Wir erheben wissentlich keine personenbezogenen Daten von Kindern (DSGVO, US-COPPA und das türkische Datenschutzgesetz KVKK). Der Kaufbildschirm, die Abo-Verwaltung und Links, die sich außerhalb der App öffnen (wie diese Seite), sind durch eine <strong>Elternsperre</strong> geschützt: Sie öffnen sich erst, nachdem drei in Worten geschriebene Zahlen eingegeben wurden.</p>
+  <p>Die App ist für Kinder gemacht und entspricht der Google-Play-Richtlinie für Familien. Abgesehen vom Eintrag zur kostenlosen Version, der nur dem internen Betrieb der App dient, erheben wir keine personenbezogenen Daten von Kindern (DSGVO, US-COPPA und das türkische Datenschutzgesetz KVKK). Der Kaufbildschirm, die Abo-Verwaltung und Links, die sich außerhalb der App öffnen (wie diese Seite), sind durch eine <strong>Elternsperre</strong> geschützt: Sie öffnen sich erst, nachdem drei in Worten geschriebene Zahlen eingegeben wurden.</p>
 
   <h2>Komponenten von Drittanbietern</h2>
   <p>Die App enthält keine Werbe-, Analyse-, Absturzberichts- oder Social-Media-Software. Die verwendeten Open-Source-Komponenten (Flutter, three.js und die Spracherkennung sherpa-onnx) laufen nur auf dem Gerät und senden keine Daten.</p>
-  <p>Für Abo-Käufe wird die <strong>Google Play Billing Library</strong> verwendet. Damit Käufe zuverlässig funktionieren, kann diese Bibliothek technische Diagnosedaten an Google Play senden; die Internetberechtigung der App stammt von dieser Bibliothek. Diese Daten verarbeitet Google gemäß der Datenschutzerklärung von Google; sie erreichen uns nie. Der eigene Code der App sendet nichts ins Internet.</p>
+  <p>Für Abo-Käufe wird die <strong>Google Play Billing Library</strong> verwendet. Damit Käufe zuverlässig funktionieren, kann diese Bibliothek technische Diagnosedaten an Google Play senden. Diese Daten verarbeitet Google gemäß der Datenschutzerklärung von Google; sie erreichen uns nie. Abgesehen vom Eintrag zur kostenlosen Version sendet der eigene Code der App nichts ins Internet.</p>
 
   <h2>Ihre Rechte</h2>
-  <p>Da wir keine personenbezogenen Daten erheben, haben wir keine Aufzeichnungen über Sie, die gelöscht, berichtigt oder übertragen werden könnten. Sie können die Informationen auf dem Gerät jederzeit wie oben beschrieben löschen. Bei Fragen schreiben Sie uns gern.</p>
+  <p>Wir haben keine Namen, E-Mail-Adressen oder anderen Angaben, die Sie identifizieren. Der einzige Eintrag, den wir speichern, ist der oben beschriebene Eintrag zur kostenlosen Version; da er nur einen nicht umkehrbaren Code enthält, können wir nicht herausfinden, welcher Ihrer ist (Art. 11 DSGVO). Sie können die Informationen auf dem Gerät jederzeit wie oben beschrieben löschen. Bei Fragen schreiben Sie uns gern.</p>
 
   <h2>Änderungen</h2>
   <p>Wenn wir diese Erklärung aktualisieren, veröffentlichen wir die neue Fassung auf dieser Seite und ändern das Datum. Die Erklärung wird vor jedem App-Update aktualisiert, das den Umgang mit Daten ändert.</p>
